@@ -14,6 +14,10 @@ c=\sum_{C_i}\sum_{P_i\in C_i}|P_i-C_i|
 
 ## step 2: A function for Euclidean distance
 
+```math
+|X - Y| = \sqrt{\sum_{i=1}^{i=n}(x_i-y_i)^2}
+```
+
 ``` r
 l2_dist = function(x, y){
   sqrt(sum((x - y)^2))
